@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+  background: radial-gradient(circle, #fff, rgba(162, 211, 211, 0.867));
+}
+#container {
+  height: 400px;
+  width: 550px;
+  background-color: #9dd2ea;
+  margin: 200px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 30px 5px rgb(99, 89, 89);
+  position: relative;
+}
+#score {
+  background-color: rgb(255, 239, 91);
+  padding: 15px;
+  position: absolute;
+  border-radius: 10px;
+  left: 470px;
+  box-shadow: 3px 3px 5px rgb(116, 111, 111);
+}
+#correct {
+  position: absolute;
+  left: 250px;
+  background-color: rgb(56, 177, 56);
+  padding: 20px;
+  color: rgb(247, 233, 233);
+  font-size: large;
+  display: none;
+}
+#wrong {
+  position: absolute;
+  left: 250px;
+  background-color: rgb(219, 59, 48);
+  padding: 20px;
+  color: rgb(247, 233, 233);
+  font-size: large;
+  display: none;
+}
+#question {
+  background-color: rgb(140, 59, 216);
+  color: #fff;
+  width: 400px;
+  height: 120px;
+  margin: 70px auto 5px auto;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 80px;
+  font-family: cursive, sans-serif;
+}
+#message {
+  background-color: rgb(191, 153, 226);
+  color: black;
+  width: 400px;
+  height: 50px;
+  margin-left: 75px;
+  border-radius: 10px;
+}
