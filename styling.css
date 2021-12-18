@@ -10,6 +10,8 @@ html {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 4px 4px 30px 5px rgb(99, 89, 89);
+  -moz-box-shadow: 4px 4px 30px 5px rgb(99, 89, 89);
+  -webkit-box-shadow: 4px 4px 30px 5px rgb(99, 89, 89);
   position: relative;
 }
 #score {
@@ -19,6 +21,8 @@ html {
   border-radius: 10px;
   left: 470px;
   box-shadow: 3px 3px 5px rgb(116, 111, 111);
+  -moz-box-shadow: 3px 3px 5px rgb(116, 111, 111);
+  -webkit-box-shadow: 3px 3px 5px rgb(116, 111, 111);
 }
 #correct {
   position: absolute;
@@ -76,12 +80,40 @@ html {
   font-size: 30px;
   line-height: 80px; /* Setting vertical positioning for text*/
   cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
 }
-.answer:hover {
+.answer:hover,
+#startReset:hover {
   background-color: royalblue;
   color: white;
+}
+.answer:active,
+#startReset:active {
+  top: 4px; /* The parent div should have position:relative*/
 }
 
 #ans4 {
   margin-right: 0px;
+}
+
+#startReset {
+  width: 90px;
+  background-color: white;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
 }
