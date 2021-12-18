@@ -59,4 +59,31 @@ html {
   text-align: center;
   line-height: 50px;
   font-size: 20px;
+
+}
+#userchoises {
+  height: 85px;
+  width: 400px;
+  margin: 5px auto;
+}
+.answer {
+  width: 85px;
+  height: 85px;
+  background-color: white;
+  float: left;
+  margin-right: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 80px; /* Setting vertical positioning for text*/
+  cursor: pointer;
+}
+.answer:hover {
+  background-color: royalblue;
+  color: white;
+}
+
+#ans4 {
+  margin-right: 0px;
+
 }
