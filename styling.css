@@ -50,10 +50,13 @@ html {
   font-family: cursive, sans-serif;
 }
 #message {
-  background-color: rgb(191, 153, 226);
+ background-color: rgb(191, 153, 226);
   color: black;
   width: 400px;
   height: 50px;
   margin-left: 75px;
   border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
 }
