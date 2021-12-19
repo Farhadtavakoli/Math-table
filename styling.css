@@ -54,7 +54,7 @@ html {
   font-family: cursive, sans-serif;
 }
 #message {
-  background-color: rgb(191, 153, 226);
+ background-color: rgb(191, 153, 226);
   color: black;
   width: 400px;
   height: 50px;
@@ -63,6 +63,7 @@ html {
   text-align: center;
   line-height: 50px;
   font-size: 20px;
+
 }
 #userchoises {
   height: 85px;
@@ -99,7 +100,26 @@ html {
 
 #ans4 {
   margin-right: 0px;
+
 }
+
+#startReset {
+  width: 90px;
+  background-color: white;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+
 
 #startReset {
   width: 90px;
@@ -128,3 +148,4 @@ html {
   top: 20px;
   left: 20px;
 }
+
