@@ -117,3 +117,14 @@ html {
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
 }
+#time {
+  width: 200px;
+  background-color: yellowgreen;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
