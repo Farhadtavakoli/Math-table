@@ -15,6 +15,7 @@ html {
   position: relative;
 }
 #score {
+  width: 60px;
   background-color: rgb(255, 239, 91);
   padding: 15px;
   position: absolute;
@@ -127,4 +128,19 @@ html {
   position: absolute;
   top: 20px;
   left: 20px;
+}
+#gameover {
+  background: linear-gradient(rgb(173, 122, 122), rgb(255, 75, 30));
+  border-radius: 5px;
+  color: white;
+  font-size: 30px;
+  width: 350px;
+  height: 150px;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  text-align: center;
+  line-height: 50px;
+  z-index: 2;
+  display: none;
 }
