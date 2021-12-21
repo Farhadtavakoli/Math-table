@@ -32,6 +32,7 @@ function stopCountDown() {
   hide("correct");
   hide("wrong");
   playing = false;
+  document.getElementById("startReset").innerHTML = "Start Game";
 }
 
 function countDown() {
