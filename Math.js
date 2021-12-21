@@ -12,6 +12,7 @@ document.getElementById("startReset").onclick = function () {
     location.reload();
   } else if (!playing) {
     console.log("Not playing");
+    generateQuestionAnswer();
     playing = true;
     score = 0;
     document.getElementById("scoreValue").innerHTML = score;
@@ -25,13 +26,21 @@ document.getElementById("startReset").onclick = function () {
 };
 function stopCountDown() {
   clearInterval(action);
+  /* document.getElementById("ans1").disable = true;
+  var nodes = document.getElementById("userchoises").getElementsByTagName("*");
+  for (var i = 0; i < nodes.length; i++) {
+    nodes[i].disabled = true;
+  }*/
+
   show("gameover");
+
   document.getElementById("gameover").innerHTML =
     "<p>Game Over!</p> <p>Your score is " + score + "</p>";
   hide("time");
   hide("correct");
   hide("wrong");
   playing = false;
+  document.getElementById("startReset").innerHTML = "Start Game";
 }
 
 function countDown() {
@@ -49,7 +58,12 @@ function show(id) {
 function hide(id) {
   document.getElementById(id).style.display = "none";
 }
-function generateQuestionAnswer() {}
+function generateQuestionAnswer() {
+  let x = 1 + Math.round(9 * Math.random());
+  let y = 1 + Math.round(9 * Math.random());
+  let answer = x * y;
+  console.log(answer);
+}
 
 /*
       if we are playing 
