@@ -17,7 +17,7 @@ html {
 #score {
   width: 60px;
   background-color: rgb(255, 239, 91);
-  width: 65px;
+  width: 70px;
   padding: 15px;
   position: absolute;
   border-radius: 10px;
@@ -161,7 +161,7 @@ html {
   width: 390px;
   height: 190px;
   text-align: center;
-  line-height: 60px;
+  line-height: 40px;
   display: none;
 }
 #gameover {

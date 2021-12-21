@@ -1,10 +1,12 @@
 // If we click on the start/reset button,
 let playing = false;
 let score = 0;
-let time = 61;
-document.getElementById("time").hidden = true;
-
+let time;
+hide("time");
 document.getElementById("startReset").onclick = function () {
+  hide("gameover");
+  time = 10;
+
   console.log("I do it!");
   if (playing) {
     location.reload();
@@ -13,15 +15,41 @@ document.getElementById("startReset").onclick = function () {
     playing = true;
     score = 0;
     document.getElementById("scoreValue").innerHTML = score;
-    document.getElementById("time").hidden = false;
+    show("time");
+
+    document.getElementById("remain").innerHTML = time;
+    countDown();
+    generateQuestionAnswer();
     document.getElementById("startReset").innerHTML = "Reset";
-    while (time != 0) {
-      time = time - 1;
-      document.getElementById("remain").innerHTML = time;
-    }
   }
 };
+function stopCountDown() {
+  clearInterval(action);
+  show("gameover");
+  document.getElementById("gameover").innerHTML =
+    "<p>Game Over!</p> <p>Your score is " + score + "</p>";
+  hide("time");
+  hide("correct");
+  hide("wrong");
+  playing = false;
+}
 
+function countDown() {
+  action = setInterval(function () {
+    time -= 1;
+    document.getElementById("remain").innerHTML = time;
+    if (time == 0) {
+      stopCountDown();
+    }
+  }, 1000);
+}
+function show(id) {
+  document.getElementById(id).style.display = "block";
+}
+function hide(id) {
+  document.getElementById(id).style.display = "none";
+}
+function generateQuestionAnswer() {}
 
 /*
       if we are playing 
