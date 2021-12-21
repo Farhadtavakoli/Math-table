@@ -3,10 +3,13 @@ let playing = false;
 let score = 0;
 let time = 61;
 document.getElementById("time").hidden = true;
-function newGame() {
+
+document.getElementById("startReset").onclick = function () {
+  console.log("I do it!");
   if (playing) {
     location.reload();
   } else if (!playing) {
+    console.log("Not playing");
     playing = true;
     score = 0;
     document.getElementById("scoreValue").innerHTML = score;
@@ -17,7 +20,8 @@ function newGame() {
       document.getElementById("remain").innerHTML = time;
     }
   }
-}
+};
+
 
 /*
       if we are playing 

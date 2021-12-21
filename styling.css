@@ -17,6 +17,7 @@ html {
 #score {
   width: 60px;
   background-color: rgb(255, 239, 91);
+  width: 65px;
   padding: 15px;
   position: absolute;
   border-radius: 10px;
@@ -101,7 +102,6 @@ html {
 
 #ans4 {
   margin-right: 0px;
-
 }
 
 #startReset {
@@ -121,7 +121,6 @@ html {
   -ms-transition: all 0.5s;
 }
 
-
 #startReset {
   width: 90px;
   background-color: white;
@@ -138,6 +137,7 @@ html {
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
 }
+
 #time {
   width: 200px;
   background-color: yellowgreen;
@@ -148,9 +148,22 @@ html {
   position: absolute;
   top: 20px;
   left: 20px;
-  /* display: none;*/
-}
 
+}
+#gameover {
+  background-color: tomato;
+  color: white;
+  border-radius: 10px;
+  font-size: 40px;
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  width: 390px;
+  height: 190px;
+  text-align: center;
+  line-height: 60px;
+  display: none;
+}
 #gameover {
   background: linear-gradient(rgb(173, 122, 122), rgb(255, 75, 30));
   border-radius: 5px;
@@ -166,6 +179,3 @@ html {
   z-index: 2;
   display: none;
 }
-
-
-
