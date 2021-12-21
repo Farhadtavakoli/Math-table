@@ -3,6 +3,7 @@ let playing = false;
 let score = 0;
 let time = 61;
 document.getElementById("time").hidden = true;
+
 document.getElementById("startReset").onclick = function () {
   console.log("I do it!");
   if (playing) {
@@ -20,6 +21,7 @@ document.getElementById("startReset").onclick = function () {
     }
   }
 };
+
 
 /*
       if we are playing 

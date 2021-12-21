@@ -15,6 +15,7 @@ html {
   position: relative;
 }
 #score {
+  width: 60px;
   background-color: rgb(255, 239, 91);
   width: 65px;
   padding: 15px;
@@ -55,7 +56,7 @@ html {
   font-family: cursive, sans-serif;
 }
 #message {
-  background-color: rgb(191, 153, 226);
+ background-color: rgb(191, 153, 226);
   color: black;
   width: 400px;
   height: 50px;
@@ -64,6 +65,7 @@ html {
   text-align: center;
   line-height: 50px;
   font-size: 20px;
+
 }
 #userchoises {
   height: 85px;
@@ -118,6 +120,24 @@ html {
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
 }
+
+#startReset {
+  width: 90px;
+  background-color: white;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+
 #time {
   width: 200px;
   background-color: yellowgreen;
@@ -128,6 +148,7 @@ html {
   position: absolute;
   top: 20px;
   left: 20px;
+
 }
 #gameover {
   background-color: tomato;
@@ -141,5 +162,20 @@ html {
   height: 190px;
   text-align: center;
   line-height: 60px;
+  display: none;
+}
+#gameover {
+  background: linear-gradient(rgb(173, 122, 122), rgb(255, 75, 30));
+  border-radius: 5px;
+  color: white;
+  font-size: 30px;
+  width: 350px;
+  height: 150px;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  text-align: center;
+  line-height: 50px;
+  z-index: 2;
   display: none;
 }
