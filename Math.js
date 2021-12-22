@@ -69,6 +69,15 @@ function generateQuestionAnswer() {
   document.getElementById("y").innerHTML = y;
 
   console.log(answer);
+  let correctPosition = 1 + Math.round(3 * Math.random());
+  document.getElementById("ans" + correctPosition).innerHTML = answer;
+  for (let i = 1; i <= 4; i++) {
+    let incorrectAnswer = 1 + Math.round(99 * Math.random());
+
+    if (i != correctPosition) {
+      document.getElementById("ans" + i).innerHTML = incorrectAnswer;
+    }
+  }
 }
 
 /*
