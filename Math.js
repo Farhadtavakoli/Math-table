@@ -2,11 +2,12 @@
 let playing = false;
 let score = 0;
 let time;
+let answer;
 hide("time");
 document.getElementById("startMessage").innerHTML = "Start a new Math game";
 document.getElementById("startReset").onclick = function () {
   hide("gameover");
-  time = 10;
+  time = 60;
 
   console.log("I do it!");
   if (playing) {
@@ -63,12 +64,13 @@ function hide(id) {
 function generateQuestionAnswer() {
   let x = 1 + Math.round(9 * Math.random());
   let y = 1 + Math.round(9 * Math.random());
-  let answer = x * y;
+  answer = x * y;
+  /*Refactore! */
   document.getElementById("x").innerHTML = x;
   document.getElementById("X").innerHTML = "X";
   document.getElementById("y").innerHTML = y;
 
-  console.log(answer);
+  // console.log(answer);
   let correctPosition = 1 + Math.round(3 * Math.random());
   document.getElementById("ans" + correctPosition).innerHTML = answer;
   for (let i = 1; i <= 4; i++) {
@@ -78,6 +80,20 @@ function generateQuestionAnswer() {
       document.getElementById("ans" + i).innerHTML = incorrectAnswer;
     }
   }
+}
+
+function checkCorrectAnswer(btnId) {
+  userans = document.getElementById(btnId.id).innerText;
+  console.log("This is what you selected " + userans + " " + typeof userans);
+  console.log("This is the right answer " + answer + " " + typeof answer);
+  if (toString(userans) === toString(answer)) {
+    score = score + 1;
+    console.log("Score is " + score + " " + typeof score);
+
+    document.getElementById("scoreValue").innerHTML = score;
+  }
+
+  generateQuestionAnswer();
 }
 
 /*
