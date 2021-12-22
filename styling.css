@@ -10,15 +10,21 @@ html {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 4px 4px 30px 5px rgb(99, 89, 89);
+  -moz-box-shadow: 4px 4px 30px 5px rgb(99, 89, 89);
+  -webkit-box-shadow: 4px 4px 30px 5px rgb(99, 89, 89);
   position: relative;
 }
 #score {
+  width: 60px;
   background-color: rgb(255, 239, 91);
+  width: 70px;
   padding: 15px;
   position: absolute;
   border-radius: 10px;
   left: 470px;
   box-shadow: 3px 3px 5px rgb(116, 111, 111);
+  -moz-box-shadow: 3px 3px 5px rgb(116, 111, 111);
+  -webkit-box-shadow: 3px 3px 5px rgb(116, 111, 111);
 }
 #correct {
   position: absolute;
@@ -172,6 +178,7 @@ html {
   z-index: 2;
   display: none;
 }
+
 #startMessage {
   color: white;
   position: absolute;
@@ -181,3 +188,4 @@ html {
   line-height: 100px;
   left: 175px;
 }
+

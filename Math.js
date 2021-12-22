@@ -4,7 +4,10 @@ let score = 0;
 let time;
 let answer;
 hide("time");
+
 document.getElementById("startMessage").innerHTML = "Start a new Math game";
+
+
 document.getElementById("startReset").onclick = function () {
   hide("gameover");
   time = 60;
@@ -14,7 +17,10 @@ document.getElementById("startReset").onclick = function () {
     location.reload();
   } else if (!playing) {
     console.log("Not playing");
+
     hide("startMessage");
+
+
     generateQuestionAnswer();
     playing = true;
     score = 0;
@@ -64,8 +70,11 @@ function hide(id) {
 function generateQuestionAnswer() {
   let x = 1 + Math.round(9 * Math.random());
   let y = 1 + Math.round(9 * Math.random());
+
   answer = x * y;
   /*Refactore! */
+
+
   document.getElementById("x").innerHTML = x;
   document.getElementById("X").innerHTML = "X";
   document.getElementById("y").innerHTML = y;
